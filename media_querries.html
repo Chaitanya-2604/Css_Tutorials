@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> CSS Media Queries</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+		<style type="text/css">
+			
+			.container{
+				display: grid;
+				grid-gap: 10px;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: auto;
+			}
+			.box{
+				border: 1px black solid;
+			}
+			#heading{
+				grid-column: 1/-1;
+				text-align: center;
+			}
+
+			#right{
+				font-size: 20px;
+				padding: 20px;
+				text-align: justify;
+			}
+			#left img {
+		        width: 100%;
+		        height: 100%;
+		        object-fit: cover;
+    			}
+
+    		@media(max-width:768px){
+    			body{
+    				background-color: black;
+    				color: white;
+    			}
+    			.container{
+    				display: block;
+
+    			}
+    			#left img{
+    				width: 100%;
+    				height: auto;
+    			}
+    		}
+
+		</style>
+<body>
+		<div class="container">
+			<div class="box" id="heading">
+				<h2>Indian Premier League</h2>
+			</div>
+
+			<div class="box" id="left">
+				<img src="https://blogandstories.com/wp-content/uploads/2023/03/cropped-WhatsApp-Image-2023-03-23-at-19.29.06.jpg">
+			</div>
+
+			<div class="box" id="right">
+				<p>
+					The Indian Premier League (IPL) (also known as the TATA IPL for sponsorship reasons) is a men's Twenty20 (T20) cricket league that is annually held in India. The league is contested by ten city-based franchise teams.[3][4] The BCCI founded the league in 2007. The competition is usually held in summer between March and May every year. It has an exclusive window in the ICC Future Tours Programme due to fewer international cricket tours happening during IPL seasons worldwide.
+
+					The IPL is the most-popular cricket league in the world; in 2014, it was ranked sixth by average attendance among all sports leagues. In 2010, the IPL became the first sporting event to be broadcast live on YouTube. Other Indian sports leagues have been established based on the success of the IPL.[a][11][12][13] The brand value of the league in 2022 was ₹90,038 crore (US$11 billion).[14] According to BCCI, the 2015 IPL season contributed ₹1,150 crore (US$140 million) to the GDP of the economy of India.[15] In December 2022, the IPL became a decacorn valued at US$10.9 billion, registering a 75% growth in dollar terms since 2020 when it was valued at $6.2 billion, according to a report by consulting firm D and P Advisory.[16] Its 2023 final was the most streamed live event on internet with 3.2 crore or 32 million viewers.
+
+					In 2023, the league sold its media rights for the period of 2023–2027 for US$6.4 billion to Viacom18 and Star Sports,[18] making the IPL's value per match $13.4 million.[19] As of 2023, there have been sixteen seasons of the tournament. The current champions are Chennai Super Kings, who won the season 2023 after defeating Gujarat Titans in the final at the Narendra Modi Stadium in Ahmedabad.
+
+					Background
+					The Indian Cricket League (ICL) was founded in 2007 with funding provided by Zee Entertainment Enterprises.[21] The ICL was not recognised by the Board of Control for Cricket in India (BCCI) or the International Cricket Council (ICC), and the BCCI was unhappy about its own committee members joining the ICL executive board.[22] To prevent players from joining the ICL, the BCCI increased the prize money associated with its domestic tournaments and imposed lifetime bans on any player joining the rival league, which the BCCI considered a rebel league.
+
+					Foundation
+
+					A match during the 2008 IPL inaugural season in Chennai
+					On 13 September 2007,[25] following India's victory at the 2007 T20 World Cup,[26] the BCCI announced a franchise-based Twenty20 cricket (T20) competition called the Indian Premier League. The first season was scheduled to start in April 2008 in a "high-profile ceremony" at New Delhi. BCCI vice-president Lalit Modi, who led the IPL effort, provided details of the tournament, including its format, prize money, franchise revenue system, and squad composition rules. The new league, which would be run by a seven-man governing council, would also be the qualifying mechanism for that year's Champions League Twenty20.
+
+					To determine team ownership, an auction of franchises was held on 24 January 2008; the reserve prices of the eight franchises totalled $400 million,[24] although the auction raised a total of $723.59 million.[27] As a result of the ban imposed on players opting to participate in the ICL, the rival league closed down in 2009.
+
+				</p>
+
+			</div>
+		</div>
+
+</body>
+</html>
